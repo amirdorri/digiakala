@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
@@ -32,43 +33,37 @@ fun Home(
     viewModel: HomeViewModel = hiltViewModel()
 ) {
 
-    Column(
-        modifier = Modifier
-            .background(Color.White)
-            .fillMaxSize()
+    LaunchedEffect(true) {
+        refreshData(viewModel)
+    }
+    SwipeRefreshSection(viewModel, navController)
 
-    ) {
-        val refreshScope = rememberCoroutineScope()
-        val swipeRefreshState = rememberSwipeRefreshState(isRefreshing = false)
-        SwipeRefresh(state = swipeRefreshState,
-            onRefresh = {
+}
+
+@Composable
+fun SwipeRefreshSection(viewModel: HomeViewModel, navController: NavHostController) {
+    val refreshScope = rememberCoroutineScope()
+    val swipeRefreshState = rememberSwipeRefreshState(isRefreshing = false)
+    SwipeRefresh(state = swipeRefreshState,
+        onRefresh = {
             refreshScope.launch {
-                Log.e("4545", "swipe refresh is Ok")
+                refreshData(viewModel)
             }
         }) {
 
-            Column(
-                modifier = Modifier
-                    .background(Color.White)
-                    .fillMaxSize()
-                    .padding(bottom = 60.dp)
-                    .verticalScroll(rememberScrollState())
-            ) {
-
-            LaunchedEffect(true) {
-                viewModel.getSlider()
-            }
-                SearchBarSection()
-
-                TopSliderSection()
-
-            }
-
+        LazyColumn(modifier = Modifier.fillMaxSize()) {
+            item { SearchBarSection() }
+            item { TopSliderSection() }
         }
 
 
     }
 
+}
+
+
+private suspend fun refreshData(viewModel: HomeViewModel) {
+    viewModel.getSlider()
 
 
 }
