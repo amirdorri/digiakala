@@ -36,3 +36,15 @@ val Colors.searchBarBg : Color
     get() = if (isLight)  Color(0xfff1f0ee) else Color(0xff303235)
 
 
+val Colors.darkText : Color
+    @Composable
+    get() = if (isLight)  Color(0xff414244) else Color(0xffd8d8d8)
+
+
+val Colors.amber : Color
+    @Composable
+    get() = Color(0xffFFBF00)
+
+val Colors.grayCategory : Color
+    @Composable
+    get() = Color(0xffF1F0EE)

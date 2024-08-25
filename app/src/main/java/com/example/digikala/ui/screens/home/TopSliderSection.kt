@@ -62,7 +62,7 @@ fun TopSliderSection(viewModel: HomeViewModel = hiltViewModel()) {
         is NetworkResult.Success -> {
             sliderList = sliderResult.data ?: emptyList()
             loading = false
-            Toast.makeText(context, "${sliderResult.message}", Toast.LENGTH_LONG).show()
+            //Toast.makeText(context, "${sliderResult.message}", Toast.LENGTH_LONG).show()
 
         }
 
