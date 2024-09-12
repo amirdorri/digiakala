@@ -1,10 +1,10 @@
 package com.example.digikala.di
 
 import com.example.digikala.data.remote.HomeApiInterface
-import com.example.digikala.util.Constans.API_KEY
-import com.example.digikala.util.Constans.BASE_URL
-import com.example.digikala.util.Constans.TIMEOUT_SECOND
-import com.example.digikala.util.Constans.USER_LANGUAGE
+import com.example.digikala.util.Constants.API_KEY
+import com.example.digikala.util.Constants.BASE_URL
+import com.example.digikala.util.Constants.TIMEOUT_SECOND
+import com.example.digikala.util.Constants.USER_LANGUAGE
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

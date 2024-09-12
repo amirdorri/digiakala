@@ -3,7 +3,7 @@ package com.example.digikala.ui.components
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.digikala.util.Constans.USER_LANGUAGE
+import com.example.digikala.util.Constants.USER_LANGUAGE
 import com.example.digikala.viewmodel.DataStoreViewModel
 
 
@@ -15,4 +15,5 @@ fun AppConfig(
 
  fun getDataBaseVariables(dataStore: DataStoreViewModel){
     USER_LANGUAGE = dataStore.getUserLanguage()
+     dataStore.saveUserLanguage(USER_LANGUAGE)
 }

@@ -7,7 +7,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import com.example.digikala.util.Constans.DATASTORE_NAME
+import com.example.digikala.util.Constants.DATASTORE_NAME
 import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 

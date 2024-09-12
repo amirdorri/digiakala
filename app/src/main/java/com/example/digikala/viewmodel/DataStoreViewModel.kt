@@ -3,7 +3,7 @@ package com.example.digikala.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.digikala.data.datastore.DataStoreRepository
-import com.example.digikala.util.Constans.PERSIAN_LANG
+import com.example.digikala.util.Constants.PERSIAN_LANG
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking

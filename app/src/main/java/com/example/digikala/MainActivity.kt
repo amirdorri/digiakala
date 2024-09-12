@@ -26,9 +26,9 @@ import com.example.digikala.navigation.setupNavGraph
 import com.example.digikala.ui.components.AppConfig
 import com.example.digikala.ui.components.ChangeStatusBarColor
 import com.example.digikala.ui.theme.DigikalaTheme
-import com.example.digikala.util.Constans.ENGLISH_LANG
-import com.example.digikala.util.Constans.PERSIAN_LANG
-import com.example.digikala.util.Constans.USER_LANGUAGE
+import com.example.digikala.util.Constants.ENGLISH_LANG
+import com.example.digikala.util.Constants.PERSIAN_LANG
+import com.example.digikala.util.Constants.USER_LANGUAGE
 import com.example.digikala.util.LocaleUtils
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -70,15 +70,13 @@ class MainActivity : ComponentActivity() {
                                 })
 
                         }
-                    ){
+                    ) {
                         setupNavGraph(navController = navController)
 
                     }
                 }
 
-
             }
         }
     }
 }
-

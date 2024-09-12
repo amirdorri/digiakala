@@ -11,7 +11,7 @@ import com.example.digikala.ui.screens.categoryScreen
 import com.example.digikala.ui.screens.home.HomeScreen
 import com.example.digikala.ui.screens.home.WebPageScreen
 import com.example.digikala.ui.screens.profileScreen
-import com.example.digikala.ui.screens.splashScreen
+import com.example.digikala.ui.screens.SplashScreen
 
 @Composable
 fun setupNavGraph(navController: NavHostController) {
@@ -21,7 +21,7 @@ fun setupNavGraph(navController: NavHostController) {
     ) {
 
         composable(Screen.Splash.route) {
-            splashScreen(navController)
+            SplashScreen(navController)
         }
 
         composable(Screen.Home.route) {

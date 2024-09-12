@@ -31,8 +31,8 @@ import com.example.digikala.ui.theme.LocalShape
 import com.example.digikala.ui.theme.LocalSpacing
 import com.example.digikala.ui.theme.searchBarBg
 import com.example.digikala.ui.theme.unSelecedBottomBar
-import com.example.digikala.util.Constans.ENGLISH_LANG
-import com.example.digikala.util.Constans.USER_LANGUAGE
+import com.example.digikala.util.Constants.ENGLISH_LANG
+import com.example.digikala.util.Constants.USER_LANGUAGE
 
 @Composable
 fun SearchBarSection() {

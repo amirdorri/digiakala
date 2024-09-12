@@ -14,8 +14,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.example.digikala.MainActivity
-import com.example.digikala.util.Constans.ENGLISH_LANG
-import com.example.digikala.util.Constans.PERSIAN_LANG
+import com.example.digikala.util.Constants.ENGLISH_LANG
+import com.example.digikala.util.Constants.PERSIAN_LANG
 import com.example.digikala.viewmodel.DataStoreViewModel
 
 
