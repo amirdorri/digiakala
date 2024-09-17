@@ -2,6 +2,7 @@ package com.example.digikala.repository
 
 import android.util.Log
 import com.example.digikala.data.datastore.BaseApiResponse
+import com.example.digikala.data.model.home.AmazingItem
 import com.example.digikala.data.model.home.Slider
 import com.example.digikala.data.remote.HomeApiInterface
 import com.example.digikala.data.remote.NetworkResult
@@ -16,4 +17,12 @@ class HomeRepository @Inject constructor(private val api : HomeApiInterface): Ba
             api.getSlider()
         }
     }
+
+    suspend fun getAmazingItems(): NetworkResult<List<AmazingItem>> {
+        Log.d("HomeRepository", "API call getSlider")
+        return safeApiCall {
+            api.getAmazingItems()
+        }
+    }
+
 }
