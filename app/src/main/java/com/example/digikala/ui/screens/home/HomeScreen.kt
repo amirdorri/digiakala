@@ -55,7 +55,7 @@ fun SwipeRefreshSection(viewModel: HomeViewModel, navController: NavHostControll
             }
         }) {
 
-        LazyColumn(modifier = Modifier.fillMaxSize()) {
+        LazyColumn(modifier = Modifier.fillMaxSize().padding(bottom = 60.dp)) {
             item { SearchBarSection() }
             item { TopSliderSection() }
             item { ShowcaseSection(navController) }
