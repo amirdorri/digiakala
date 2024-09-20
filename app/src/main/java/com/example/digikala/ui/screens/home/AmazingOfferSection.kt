@@ -68,6 +68,9 @@ fun AmazingOfferSection(
             item {
                 AmazingOfferCard(topImageResId = R.drawable.amazings, R.drawable.box)
             }
+            item {
+                AmazingShowMoreItem()
+            }
 
         }
 
