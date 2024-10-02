@@ -124,11 +124,6 @@ dependencies {
     implementation ("com.google.accompanist:accompanist-pager-indicators:0.29.0-alpha")
 
 
-
-
-
-
-
 }
 
 // Allow references to generated code

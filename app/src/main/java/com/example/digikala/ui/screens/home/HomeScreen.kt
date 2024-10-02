@@ -72,5 +72,4 @@ private suspend fun refreshData(viewModel: HomeViewModel) {
     viewModel.getAllDataFromServer()
 
 
-
 }

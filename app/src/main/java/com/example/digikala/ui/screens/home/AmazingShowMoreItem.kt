@@ -58,7 +58,7 @@ fun AmazingShowMoreItem() {
                 text = stringResource(R.string.see_all),
                 style = MaterialTheme.typography.h6,
                 fontWeight = FontWeight.SemiBold,
-                color = MaterialTheme.colors.darkText
+                color = MaterialTheme.colors.darkText,
                 )
 
         }
